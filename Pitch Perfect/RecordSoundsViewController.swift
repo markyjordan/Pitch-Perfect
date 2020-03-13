@@ -23,10 +23,6 @@ class RecordSoundsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
 
     @IBAction func recordAudio(_ sender: Any) {
         recordingLabel.text = "Recording in Progress"
