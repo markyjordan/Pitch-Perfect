@@ -73,7 +73,22 @@
                     <view key="view" contentMode="scaleToFill" id="ROu-Gh-YVx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Xd8-9k-cww">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Z0a-de-NPD">
+                                <rect key="frame" x="107" y="393" width="200" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Xd8-9k-cww" firstAttribute="top" secondItem="Kgz-vw-doZ" secondAttribute="top" id="1mG-ee-jH8"/>
+                            <constraint firstItem="Kgz-vw-doZ" firstAttribute="bottom" secondItem="Xd8-9k-cww" secondAttribute="bottom" id="aXH-KA-FiI"/>
+                            <constraint firstItem="Kgz-vw-doZ" firstAttribute="trailing" secondItem="Xd8-9k-cww" secondAttribute="trailing" id="dkV-27-W0p"/>
+                            <constraint firstItem="Xd8-9k-cww" firstAttribute="leading" secondItem="Kgz-vw-doZ" secondAttribute="leading" id="tqV-J2-AYg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Kgz-vw-doZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="p5q-JA-NVo"/>
