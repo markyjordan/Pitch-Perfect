@@ -50,9 +50,9 @@
                             <constraint firstItem="joR-LL-9Bq" firstAttribute="centerX" secondItem="XLH-8F-uP1" secondAttribute="centerX" id="F9f-kc-bee"/>
                             <constraint firstItem="XLH-8F-uP1" firstAttribute="top" secondItem="KPo-OO-I2b" secondAttribute="bottom" constant="8" id="LTn-Yr-dCs"/>
                             <constraint firstItem="XLH-8F-uP1" firstAttribute="centerX" secondItem="KPo-OO-I2b" secondAttribute="centerX" id="Unp-X5-j8w"/>
-                            <constraint firstItem="KPo-OO-I2b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qOV-ND-MB1"/>
+                            <constraint firstItem="KPo-OO-I2b" firstAttribute="centerX" secondItem="UEQ-1Q-5P8" secondAttribute="centerX" id="qOV-ND-MB1"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="UEQ-1Q-5P8"/>
                     </view>
                     <navigationItem key="navigationItem" id="3re-Yk-dAR"/>
                     <connections>
@@ -74,28 +74,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Xd8-9k-cww">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="09M-l6-skW">
+                                <rect key="frame" x="16" y="88" width="382" height="686"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="c57-j8-9Sp">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="228.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HeR-rX-NUQ" userLabel="SlowButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="191" height="228.5"/>
+                                                <state key="normal" image="Slow"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HlA-IQ-wbD" userLabel="FastButton">
+                                                <rect key="frame" x="191" y="0.0" width="191" height="228.5"/>
+                                                <state key="normal" image="Fast"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lTh-rN-y8d">
+                                        <rect key="frame" x="0.0" y="228.5" width="382" height="229"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLf-MZ-B2o" userLabel="ChipmunkButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="191" height="229"/>
+                                                <state key="normal" image="HighPitch"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDp-rP-pbQ" userLabel="VaderButton">
+                                                <rect key="frame" x="191" y="0.0" width="191" height="229"/>
+                                                <state key="normal" image="LowPitch"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="49T-IA-5tW">
+                                        <rect key="frame" x="0.0" y="457.5" width="382" height="228.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NbR-qJ-HYS" userLabel="EchoButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="191" height="228.5"/>
+                                                <state key="normal" image="Echo"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5W-eA-ksH" userLabel="ReverbButton">
+                                                <rect key="frame" x="191" y="0.0" width="191" height="228.5"/>
+                                                <state key="normal" image="Reverb"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Z0a-de-NPD">
-                                <rect key="frame" x="107" y="393" width="200" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWr-8H-ktK" userLabel="StopButton">
+                                <rect key="frame" x="175" y="782" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="FQf-t1-dUc"/>
+                                    <constraint firstAttribute="width" constant="64" id="KJN-R3-oIb"/>
+                                </constraints>
+                                <state key="normal" image="Stop"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Xd8-9k-cww" firstAttribute="top" secondItem="Kgz-vw-doZ" secondAttribute="top" id="1mG-ee-jH8"/>
-                            <constraint firstItem="Kgz-vw-doZ" firstAttribute="bottom" secondItem="Xd8-9k-cww" secondAttribute="bottom" id="aXH-KA-FiI"/>
-                            <constraint firstItem="Kgz-vw-doZ" firstAttribute="trailing" secondItem="Xd8-9k-cww" secondAttribute="trailing" id="dkV-27-W0p"/>
-                            <constraint firstItem="Xd8-9k-cww" firstAttribute="leading" secondItem="Kgz-vw-doZ" secondAttribute="leading" id="tqV-J2-AYg"/>
+                            <constraint firstItem="X24-B0-85t" firstAttribute="trailing" secondItem="09M-l6-skW" secondAttribute="trailing" constant="16" id="14w-Va-e8U"/>
+                            <constraint firstItem="tWr-8H-ktK" firstAttribute="centerX" secondItem="X24-B0-85t" secondAttribute="centerX" id="2sP-hY-PL0"/>
+                            <constraint firstItem="tWr-8H-ktK" firstAttribute="top" secondItem="09M-l6-skW" secondAttribute="bottom" constant="8" id="J4i-Uy-UBi"/>
+                            <constraint firstItem="09M-l6-skW" firstAttribute="leading" secondItem="X24-B0-85t" secondAttribute="leading" constant="16" id="Wks-ft-lBF"/>
+                            <constraint firstItem="09M-l6-skW" firstAttribute="top" secondItem="X24-B0-85t" secondAttribute="top" id="aou-p7-na5"/>
+                            <constraint firstItem="X24-B0-85t" firstAttribute="bottom" secondItem="tWr-8H-ktK" secondAttribute="bottom" constant="16" id="ozm-6x-IJ4"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Kgz-vw-doZ"/>
+                        <viewLayoutGuide key="safeArea" id="X24-B0-85t"/>
                     </view>
                     <navigationItem key="navigationItem" id="p5q-JA-NVo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yxa-Tf-3Qw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1957" y="138"/>
+            <point key="canvasLocation" x="1956.521739130435" y="137.94642857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rac-Xf-rzy">
@@ -117,7 +164,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Echo" width="90" height="90"/>
+        <image name="Fast" width="90" height="90"/>
+        <image name="HighPitch" width="90" height="90"/>
+        <image name="LowPitch" width="90" height="90"/>
         <image name="Record" width="155" height="155"/>
+        <image name="Reverb" width="90" height="90"/>
+        <image name="Slow" width="90" height="90"/>
         <image name="Stop" width="155" height="155"/>
     </resources>
 </document>
