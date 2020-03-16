@@ -25,6 +25,8 @@ class PlaySoundsViewController: UIViewController {
     var audioPlayerNode: AVAudioPlayerNode!
     var stopTimer: Timer!
     
+    enum ButtonType: Int { case slow = 0, fast, chipmunk, vader, echo, reverb }
+    
     @IBAction func playSoundForButton(_ sender: UIButton) {
         print("Play Sound Button Pressed")
     }
@@ -37,6 +39,5 @@ class PlaySoundsViewController: UIViewController {
         super.viewDidLoad()
 
     }
-    
 
 }
