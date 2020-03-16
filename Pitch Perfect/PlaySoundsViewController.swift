@@ -10,6 +10,14 @@ import UIKit
 
 class PlaySoundsViewController: UIViewController {
 
+    @IBOutlet weak var slowButton: UIButton!
+    @IBOutlet weak var fastButton: UIButton!
+    @IBOutlet weak var chipmunkButton: UIButton!
+    @IBOutlet weak var vaderButton: UIButton!
+    @IBOutlet weak var reverbButton: UIButton!
+    @IBOutlet weak var echoButton: UIButton!
+    @IBOutlet weak var stopButton: UIButton!
+    
     var recordedAudioURL: URL!
     
     override func viewDidLoad() {
