@@ -61,11 +61,11 @@
 				E2DBA8042417878800BF06DA /* AppDelegate.swift */,
 				E2DBA8062417878800BF06DA /* SceneDelegate.swift */,
 				E2DBA8082417878800BF06DA /* RecordSoundsViewController.swift */,
-				E2DBA80A2417878800BF06DA /* Main.storyboard */,
-				E2DBA80D2417878800BF06DA /* Assets.xcassets */,
-				E2DBA80F2417878800BF06DA /* LaunchScreen.storyboard */,
-				E2DBA8122417878800BF06DA /* Info.plist */,
 				E267BF9F241BD72E002A9EB4 /* PlaySoundsViewController.swift */,
+				E2DBA80A2417878800BF06DA /* Main.storyboard */,
+				E2DBA80F2417878800BF06DA /* LaunchScreen.storyboard */,
+				E2DBA80D2417878800BF06DA /* Assets.xcassets */,
+				E2DBA8122417878800BF06DA /* Info.plist */,
 			);
 			path = "Pitch Perfect";
 			sourceTree = "<group>";
