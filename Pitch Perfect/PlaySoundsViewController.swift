@@ -19,6 +19,7 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var echoButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
+    var configureUI: UIView!
     var recordedAudioURL: URL!
     var audioFile: AVAudioFile!
     var audioEngine: AVAudioEngine!
