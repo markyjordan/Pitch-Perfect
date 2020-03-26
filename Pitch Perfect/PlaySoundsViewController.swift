@@ -9,8 +9,12 @@
 import UIKit
 import AVFoundation
 
+// MARK: PlaySoundsViewController: UIViewController
+
 class PlaySoundsViewController: UIViewController {
 
+    // MARK: Outlets
+    
     @IBOutlet weak var slowButton: UIButton!
     @IBOutlet weak var fastButton: UIButton!
     @IBOutlet weak var chipmunkButton: UIButton!

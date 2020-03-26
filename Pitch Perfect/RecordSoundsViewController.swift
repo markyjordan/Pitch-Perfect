@@ -9,13 +9,19 @@
 import UIKit
 import AVFoundation
 
+// MARK: RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate
+
 class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
 
+    // MARK: Outlets
+    
     @IBOutlet weak var recordingLabel: UILabel!
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var stopRecordingButton: UIButton!
     
     var audioRecorder: AVAudioRecorder!
+    
+    // MARK: Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +43,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
             stopRecordingButton.isEnabled = false
         }
     }
+    
+    // MARK: Actions
     
     @IBAction func recordAudio(_ sender: Any) {
         configureUI(isRecording: true)
